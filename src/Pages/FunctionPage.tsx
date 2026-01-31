@@ -10,8 +10,6 @@ const FunctionPage = () => {
 
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-10 text-white">
-      
-     
       <div className="flex items-center justify-between w-96 px-6 py-4 bg-zinc-900 rounded-xl shadow-lg">
         <div className="flex items-center gap-3">
           <span className="text-2xl">🔔</span>
@@ -28,7 +26,6 @@ const FunctionPage = () => {
         </button>
       </div>
 
-     
       <div className="flex gap-8">
         <button
           onClick={() => {

@@ -23,18 +23,12 @@ const Notifications = () => {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center text-white">
-      
       <div className="w-[420px] bg-zinc-900 rounded-2xl shadow-xl p-6 space-y-6">
-        
-        
-        <h1 className="text-xl font-semibold text-center">
-          Notifications
-        </h1>
+        <h1 className="text-xl font-semibold text-center">Notifications</h1>
         <p className="text-sm text-zinc-400 text-center">
           Notifications will auto-remove every 3 seconds
         </p>
 
-        
         <ul className="space-y-3 max-h-64 overflow-y-auto">
           {items.length === 0 && (
             <li className="text-center text-zinc-500">
@@ -52,7 +46,9 @@ const Notifications = () => {
               }`}
             >
               <span className="font-medium">
-                {elem.type === "success" ? "✅ Success Notification" : "❌ Error Notification"}
+                {elem.type === "success"
+                  ? "✅ Success Notification"
+                  : "❌ Error Notification"}
               </span>
 
               <button
@@ -65,7 +61,6 @@ const Notifications = () => {
           ))}
         </ul>
 
-        
         <div className="flex justify-between pt-4 border-t border-zinc-700">
           <button
             onClick={() => dispatch(clearNotification())}
