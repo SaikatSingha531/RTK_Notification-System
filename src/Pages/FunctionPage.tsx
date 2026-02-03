@@ -26,13 +26,13 @@ const FunctionPage = () => {
         </button>
       </div>
 
-      <div className="flex gap-8">
+      <div className="grid grid-cols-2 gap-8">
         <button
           onClick={() => {
             dispatch(addNotification("success"));
             toast.success("Success Notification Added");
           }}
-          className="px-10 py-4 text-lg font-semibold rounded-xl bg-green-600 hover:bg-green-700 transition shadow-lg"
+          className="px-10 py-6 text-lg font-semibold rounded-2xl bg-green-600 hover:bg-green-700 transition"
         >
           Success
         </button>
@@ -40,11 +40,31 @@ const FunctionPage = () => {
         <button
           onClick={() => {
             dispatch(addNotification("reject"));
-            toast.error("Error Notification Added");
+            toast.error("Reject Notification Added");
           }}
-          className="px-10 py-4 text-lg font-semibold rounded-xl bg-red-600 hover:bg-red-700 transition shadow-lg"
+          className="px-10 py-6 text-lg font-semibold rounded-2xl bg-red-600 hover:bg-red-700 transition"
         >
-          Error
+          Reject
+        </button>
+
+        <button
+          onClick={() => {
+            dispatch(addNotification("warning"));
+            toast.warning("Warning Notification Added");
+          }}
+          className="px-10 py-6 text-lg font-semibold rounded-2xl bg-yellow-500 hover:bg-yellow-600 text-black transition"
+        >
+          Warning
+        </button>
+
+        <button
+          onClick={() => {
+            dispatch(addNotification("info"));
+            toast.info("Info Notification Added");
+          }}
+          className="px-20 py-6 text-lg font-semibold rounded-2xl bg-blue-500 hover:bg-blue-600 transition"
+        >
+          Info
         </button>
       </div>
     </div>

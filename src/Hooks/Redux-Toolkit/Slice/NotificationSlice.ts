@@ -1,6 +1,9 @@
 import { createSlice, nanoid, type PayloadAction } from "@reduxjs/toolkit";
 import { toast } from "sonner";
-import type { NotificationState, NotificationType } from "../../../Typescript/Interface/Interface";
+import type {
+  NotificationState,
+  NotificationType,
+} from "../../../Typescript/Interface/Interface";
 
 const initialState: NotificationState = {
   count: 0,

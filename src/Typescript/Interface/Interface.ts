@@ -1,4 +1,4 @@
-export type NotificationType = "success" | "reject";
+export type NotificationType = "success" | "reject" | "info" | "warning";
 
 export interface NotificationItem {
   id: string;
